@@ -1,0 +1,62 @@
+import Scanner
+
+function main():
+    display("1 USD")
+    display("2 EUR")
+    display("3 JPY”)
+    display("4 GBP”)
+
+
+    display("Choose the currency")
+    choice = readInteger()
+
+    display("Enter the amount")
+    amount = readDouble()
+
+    switch choice:
+        case 1:
+            convertUsdToOther(amount)
+        case 2:
+            convertEurToOther(amount)
+        case 3:
+            convertJpyToOther(amount)
+        case 4:
+            convertGbpToOther(amount)
+        default:
+            display("Invalid choice")
+
+function convertUsdToOther(amt):
+    usdToEurRate = 
+    usdToJpyRate
+    usdToGbpRate
+
+    display(“$” + amt + " = " + “€” + (amt * usdToEurRate))
+    display(“$” + amt + " = " + (amt * usdToJpyRate) + “¥”))
+    display(“$” + amt + " = " + “£” + (amt * usdToGbpRate))
+
+function convertEurToOther(amt):
+    euroToUsdRate
+    euroToJpyRate
+    euroToGbpRate
+
+    display(“€” + amt + " = " + “$” + (amt * eurToUsdRate))
+    display(“€” + amt + " = " + (amt * eurToJpyRate) + “¥”))
+    display(“€” + amt + " = " + “£” + (amt * eurToGbpRate))
+
+function convertJpyToOther(amt):
+    jpyToUsdRate
+    jpyToEurRate
+    jpyToGbpRate
+
+    display(amt + “¥” + “ = " + “$” + (amt * jpyToUsdRate))
+    display(amt + “¥” + “ = = " + “€” + (amt * jpyToEurRate))
+    display(amt + “¥” + “ =  " + “£” + (amt * jpyToGbpRate))
+
+function convertGbpToOther(amt):
+    gbpToUsdRate
+    gbpToEurRate
+    gbpTojpyRate
+
+    display(“£” + amt + " = " + “$” + (amt * gbpToUsdRate))
+    display(“£” + amt + " = " + “£” + (amt * gbpToEurRate))
+    display(“£” + amt + " = " + (amt * gbpToJpyRate) + “¥”))
